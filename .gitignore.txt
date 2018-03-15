@@ -1,1 +1,1 @@
-/node_modules
+*GitProject/node_modules
