@@ -17,12 +17,12 @@ import { HeroService }          from './hero.service';
 import { MessageService }       from './message.service';
 import { MessagesComponent }    from './messages/messages.component';
 import { ExploreCityComponent } from './explore-city/explore-city.component';
-//import { Routes } from '@angular/router';
-import {RouterModule, Routes}from '@angular/router';
 
-const appRoutes: Routes = [
-  {path: 'explore-city', component: ExploreCityComponent}
-]
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModule } from '@angular/material';
+//import { Routes } from '@angular/router';
+
+
 
 
 @NgModule({
