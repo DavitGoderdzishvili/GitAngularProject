@@ -16,6 +16,14 @@ import { HeroSearchComponent }  from './hero-search/hero-search.component';
 import { HeroService }          from './hero.service';
 import { MessageService }       from './message.service';
 import { MessagesComponent }    from './messages/messages.component';
+import { ExploreCityComponent } from './explore-city/explore-city.component';
+//import { Routes } from '@angular/router';
+import {RouterModule, Routes}from '@angular/router';
+
+const appRoutes: Routes = [
+  {path: 'explore-city', component: ExploreCityComponent}
+]
+
 
 @NgModule({
   imports: [
@@ -37,7 +45,8 @@ import { MessagesComponent }    from './messages/messages.component';
     HeroesComponent,
     HeroDetailComponent,
     MessagesComponent,
-    HeroSearchComponent
+    HeroSearchComponent,
+    ExploreCityComponent
   ],
   providers: [ HeroService, MessageService ],
   bootstrap: [ AppComponent ]
